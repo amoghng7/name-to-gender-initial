@@ -1,0 +1,49 @@
+
+{
+    "name": "arunbabu_gender-by-names",
+    "title": "gender by names",
+    "description": "List of names by gender\n\n#List of Names by gender\nCovers data filtered from SSN names, US, UK and Indian Names.\n\n##Gender Column\n1 => male\n0=> female\n3 => unisex",
+    "homepage": "https://data.world/arunbabu/gender-by-names",
+    "license": "CC-BY",
+    "resources": [
+        {
+            "name": "gender_refine_csv",
+            "schema":
+            {
+                "fields": [
+                    {
+                        "name": "name",
+                        "title": "name",
+                        "type": "string",
+                        "rdfType": "http://www.w3.org/2001/XMLSchema#string",
+                        "dwSourceId": "name"
+                    },
+                    {
+                        "name": "gender",
+                        "title": "gender",
+                        "type": "integer",
+                        "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+                        "dwSourceId": "gender"
+                    },
+                    {
+                        "name": "score",
+                        "title": "score",
+                        "type": "number",
+                        "rdfType": "http://www.w3.org/2001/XMLSchema#decimal",
+                        "dwSourceId": "score"
+                    }
+                ]
+            },
+            "path": "data/gender_refine_csv.csv",
+            "format": "csv"
+        },
+        {
+            "name": "original/gender_refine-csv.csv",
+            "path": "original/gender_refine-csv.csv",
+            "format": "csv",
+            "mediatype": "text/csv",
+            "bytes": 1439322,
+            "keywords": ["clean data"]
+        }
+    ]
+}
