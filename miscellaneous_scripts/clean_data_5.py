@@ -9,8 +9,7 @@ from numpy import argmax
 
 from keras.utils import to_categorical
 
-
-data = pd.read_csv("../raw_data/Indian-Male-Names.csv")
+data = pd.read_csv(file_name)
 surnames = pd.read_csv("../raw_data/indian_surname.csv").apply(lambda x: x.astype(str).str.lower().str.strip()).values
 
 data = data.dropna()
